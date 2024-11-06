@@ -7,23 +7,23 @@ export const Header = () => {
             <nav>
                 <ul className="flex gap-20 m-0">
                     <li>
-                        <Link to="/" className="no-underline text-black font-mono hover:shadow-lg tracking-wider text-xl  ">
+                        <Link to="/" className="no-underline text-black font-mono hover:shadow-lg tracking-wider text-xl p-2 hover:rounded-lg">
                         Ana Sayfa
                         </Link>
                     </li>
                     <li>
-                        <Link to="/about" className="no-underline text-black font-mono hover:shadow-lg tracking-wider text-xl ">Hakkımda</Link>
+                        <Link to="/about" className="no-underline text-black font-mono hover:shadow-lg tracking-wider text-xl p-2  hover:rounded-lg">Hakkımda</Link>
                     </li>
                     <li>
-                        <Link to="/contact" className="no-underline text-black font-mono hover:shadow-lg tracking-wider text-xl ">İletişim</Link>
+                        <Link to="/contact" className="no-underline text-black font-mono hover:shadow-lg tracking-wider text-xl p-2  hover:rounded-lg">İletişim</Link>
                     </li>
                 </ul>
             </nav>
             <div className="flex gap-20">
                 <HeaderSwitch />
                 <div className="flex gap-5">
-                    <button id="turkish-btn" aria-label="Switch to Turkish" className="no-underline text-black font-mono hover:shadow-lg tracking-wider ">Türkçe</button>
-                    <button id="english-btn" aria-label="Switch to English" className="no-underline text-black font-mono hover:shadow-lg tracking-wider ">English</button>
+                    <button id="turkish-btn" aria-label="Switch to Turkish" className="no-underline text-black font-mono hover:shadow-lg tracking-wider p-2 hover:rounded-lg">Türkçe</button>
+                    <button id="english-btn" aria-label="Switch to English" className="no-underline text-black font-mono hover:shadow-lg tracking-wider p-2 hover:rounded-lg">English</button>
                 </div>
             </div>
         </header>

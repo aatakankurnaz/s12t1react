@@ -4,7 +4,7 @@ function HeaderSwitch() {
   return (
     <Form>
       <Form.Check 
-        className='font-mono m-0'
+        className='font-mono mt-2'
         type="switch"
         id="custom-switch"
         label="Dark Mode"
