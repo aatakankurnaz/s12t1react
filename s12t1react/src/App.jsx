@@ -1,21 +1,24 @@
-import { Footer } from "./components/Footer"
-import { Header } from "./components/Header"
-import { Main } from "./components/Main"
-import { BrowserRouter as Router} from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import { Home } from "./pages/Home"
+import { About } from "./pages/About"
+import { Contact } from "./pages/Contact"
+import { Route, Switch } from 'react-router-dom';
 function App() {
 
   return (
     <>
-      <Router>
-      <div>
-      <Header />
-      <Main />
-      <Footer />
-      </div>
-      </Router>
+
+        <Switch>
+          <Route  exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
     </>
   )
 }
