@@ -38,6 +38,7 @@ export const locales = {
     formideaph: "Lütfen fikir ve önerilerinizi yazınız.",
     formsubmit: "Gönder",
   },
+  
   en: {
     quote: 'Every entrepreneur should have their own website to leave a mark in the digital world; because an idea comes to life on the platform it is shared.',
     name: "Atakan KURNAZ",
