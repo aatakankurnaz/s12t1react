@@ -12,7 +12,7 @@ export const Main = () => {
   };
 
   return (
-    <div className="dark:bg-gray-900">
+    <div className="dark:bg-gray-899">
       <main className="flex justify-center my-10">
         <section>
           <img
