@@ -34,7 +34,7 @@ button {
 }
 
 a {
-  color: inherit;
+  color: black;
   text-decoration: none;
 }
 
@@ -50,3 +50,5 @@ body {
 table {
   border-collapse: collapse;
 }
+
+
