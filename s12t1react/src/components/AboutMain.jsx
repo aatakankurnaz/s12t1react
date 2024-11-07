@@ -1,17 +1,26 @@
-export const AboutMain = () => {
-    return (
-        <main className="flex flex-col gap-5 pl-10 flex-grow">
-            <h1 className="font-mono">HAKKIMDA</h1>
-            <div className="font-serif italic">
-                <p >1994 yılında Trabzon'da doğdum. Yaklaşık 26 yıl Kocaeli'de yaşadıktan sonra İstanbul'a geldim.</p>
-                <p>Kocaeli Üniversitesi Siyaset Bilimi ve Kamu Yönetimi mezunuyum.</p>
-                <p>Mezun olduğum bölüm sizi yanıltmasın. Bilgi çağında internete erişimimizin olduğu her yerde istediğimiz tüm bilgilere erişip kendimizi geliştirebileceğimize inanıyorum.</p>
-                <p>Öğrenmeyi öğrendiğimiz ve gerekli kararlılığı gösterdiğimiz sürece yapamayacağımız hiçbir şey yok.</p>
+import {useSelector} from "react-redux"
+import { locales } from "../locales/locales";
 
-                <p>Teknolojik gelişmeler ve en önemlisi bilgisayar benim hayatımda yıllardır ilgilendiğim alanlar olmuştur.</p>
-                <p>2024'te Workintech ile tanıştığımda artık bu ilgiyi farklı bir seviyeye çıkararak bilgisyarı kullanıyoruz ama onunla konuşmamız gerekli mottosu ile eğitimlere katıldım.</p>
-                <p>Eğitimim boyunca <span className="font-bold">JavaScript, React, Java, Tailwind, Cypress</span> gibi yazılım dilleri ve frameworklerinde uzmanlaştım.</p>
-                <p>Artık gelişme, geliştirme ve üretme zamanı.</p>
+export const AboutMain = () => {
+    const currentLanguage = useSelector((state) => state.language); 
+
+ 
+  const getLocalizedText = (key) => {
+    return locales[currentLanguage][key]; 
+  };
+    return (
+        <main className="flex flex-col gap-5 pl-10 flex-grow items-center justify-center dark:bg-gray-900">
+            <h1 className="font-mono mb-20">{getLocalizedText("about")}</h1>
+            <div className="font-serif italic flex flex-col items-center">
+                <p>{getLocalizedText("m1")}</p>
+                <p>{getLocalizedText("m2")}</p>
+                <p>{getLocalizedText("m3")}</p>
+                <p>{getLocalizedText("m4")}</p>
+
+                <p>{getLocalizedText("m5")}</p>
+                <p>{getLocalizedText("m6")}</p>
+                <p>{getLocalizedText("m7")}</p>
+                <p>{getLocalizedText("m8")}</p>
             </div>
         </main>
     )

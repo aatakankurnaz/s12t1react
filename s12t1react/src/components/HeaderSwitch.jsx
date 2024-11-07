@@ -1,6 +1,7 @@
 import Form from 'react-bootstrap/Form';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleDarkMode } from '../store/store';
+import { toggleDarkMode } from '../store/actions';
+
 
 function HeaderSwitch() {
   
