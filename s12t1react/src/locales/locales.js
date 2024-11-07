@@ -1,7 +1,7 @@
 export const locales = {
   tr: {
-    quote: `"Her girişimci, dijital dünyada iz bırakmak için kendi internet sitesine sahip olmalıdır; 
-              çünkü bir fikir, paylaşıldığı platformda hayat bulur."`,
+    quote: `Her girişimci, dijital dünyada iz bırakmak için kendi internet sitesine sahip olmalıdır; 
+              çünkü bir fikir, paylaşıldığı platformda hayat bulur.`,
     name: "Atakan KURNAZ",
     title: "Frontend Developer",
     buttonText: "Fikirlerine Hayat Ver",
@@ -39,8 +39,7 @@ export const locales = {
     formsubmit: "Gönder",
   },
   en: {
-    quote: `"Every entrepreneur should have their own website to leave a mark in the digital world; 
-              because an idea comes to life on the platform it is shared."`,
+    quote: 'Every entrepreneur should have their own website to leave a mark in the digital world; because an idea comes to life on the platform it is shared.',
     name: "Atakan KURNAZ",
     title: "Frontend Developer",
     buttonText: "Give Life To Your Ideas",
