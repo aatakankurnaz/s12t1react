@@ -52,7 +52,7 @@ export const Main = () => {
             <div className="flex-1 flex flex-col items-center gap-3">
               <h2>{getLocalizedText('link2')}</h2>
               <nav className="flex flex-col gap-[10px]">
-                <p>{getLocalizedText('project1')}</p>
+                <a href="https://vercel.com/aatakankurnazs-projects/pizzareact">{getLocalizedText('project1')}</a>
                 <p>{getLocalizedText('project2')}</p>
                 <p>{getLocalizedText('project3')}</p>
               </nav>
